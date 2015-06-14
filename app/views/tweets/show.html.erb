@@ -1,0 +1,9 @@
+<div>
+  아이디: <%= @tweet.id %>
+  내용: <%= @tweet.tweet %>
+  작성자: <%= @tweet.user_name %>
+  카테고리: <%= @tweet.category %>
+  공개여부: <%= @tweet.is_public %>
+  시간: <%= @tweet.created_at %>
+  <%= link_to "수정", edit_tweet_path(id: @tweet.id)%>
+</div>

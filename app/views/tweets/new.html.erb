@@ -1,0 +1,23 @@
+<div>
+  <%= form_for Tweet.new do |form| %>
+    트윗 내용:
+    <div>
+      <%= form.text_field :tweet %>
+    </div>
+    트윗 작성자:
+    <div> 
+      <%= form.text_field :user_name %>
+    </div>
+    트윗 카테고리:
+    <div>
+      <%= form.text_field :category %>
+    </div>
+    트윗 공개/비공개:
+    <div>
+      <%= form.text_field :is_public %>
+    </div>
+    <div>
+      <%= form.submit "트윗하기" %>
+    </div>
+  <% end %>
+</div>
